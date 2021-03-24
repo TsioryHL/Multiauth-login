@@ -26,10 +26,14 @@ class DashboardController extends Controller
 
     public function controlleUser()
     {
-        $users = User::all();
+        $users = User::paginate(5);
         $roles = Role::all();
         return view('userController', compact('users','roles'));
     }
 
+    public function destroy()
+    {
+
+    }
 
 }
