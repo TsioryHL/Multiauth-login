@@ -14,23 +14,69 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
         <style>
-            .bg{
-                background: url('');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
             }
-            .form-container{
-                background: #fff;
-                padding: 38px;
-                border-radius: 18px;
-                box-shadow: 0px 0px 10px 0px 4000;
+            .row{
+                background: white;
+                border-radius: 30px;
+                border-color: black;
+                border: 2px;
+                box-shadow: 5px 5px 10px rgb(255, 255, 255);
             }
+            img{
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+
+
+            }
+            .btn1{
+                border:none;
+                outline:none;
+                height: 40px;
+                width: 100%;
+                background: black;
+                color: white;
+                border-radius: 5px;
+                font-family:'Trebuchet MS';
+                font-weight: bold;
+                font-size: 22px;
+                margin-top: 10px;
+            }
+            .btn1:hover{
+                background: rgb(119, 77, 4);
+            }
+
+            .lign{
+
+                margin: 50px auto;
+                background: rgb(252, 250, 250);
+                height: 8px;
+                border-radius: 2px;
+                width: 50%;
+            }
+
         </style>
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body>
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
-        </div>
-    </body>
+
+    <div>
+        {{ $slot }}
+    </div>
+
+
+
+
 </html>

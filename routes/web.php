@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\usersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,6 +31,9 @@ Route::group(['middleware' => ['auth']], function(){
 Route::group(['middleware' => ['auth', 'role:admin']], function(){
     Route::get('/dashboard/userController', 'App\Http\Controllers\DashboardController@controlleUser')->name('dashboard.userController');
 });
+
+
+
 
 
 require __DIR__.'/auth.php';
